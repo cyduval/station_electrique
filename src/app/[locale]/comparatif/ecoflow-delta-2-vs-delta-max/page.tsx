@@ -7,12 +7,15 @@ interface PageProps {
   params: Promise<{ locale: Locale }>;
 }
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
   const { locale } = await params;
 
   return {
     title: "EcoFlow DELTA 2 vs DELTA Max - Comparatif complet",
-    description: "Quelle EcoFlow choisir ? Comparaison détaillée entre DELTA 2 et DELTA Max. Capacité, puissance, prix.",
+    description:
+      "Quelle EcoFlow choisir ? Comparaison détaillée entre DELTA 2 et DELTA Max. Capacité, puissance, prix.",
     alternates: {
       canonical: `/${locale}/comparatif/ecoflow-delta-2-vs-delta-max`,
       languages: {
@@ -25,16 +28,61 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 const comparisonData = [
-  { feature: "Capacité", delta2: "1024 Wh", deltaMax: "2016 Wh", winner: "deltaMax" },
-  { feature: "Extensible jusqu'à", delta2: "3 kWh", deltaMax: "6 kWh", winner: "deltaMax" },
-  { feature: "Puissance de sortie", delta2: "1800W", deltaMax: "2400W", winner: "deltaMax" },
-  { feature: "Puissance crête", delta2: "3400W", deltaMax: "5000W", winner: "deltaMax" },
+  {
+    feature: "Capacité",
+    delta2: "1024 Wh",
+    deltaMax: "2016 Wh",
+    winner: "deltaMax",
+  },
+  {
+    feature: "Extensible jusqu'à",
+    delta2: "3 kWh",
+    deltaMax: "6 kWh",
+    winner: "deltaMax",
+  },
+  {
+    feature: "Puissance de sortie",
+    delta2: "1800W",
+    deltaMax: "2400W",
+    winner: "deltaMax",
+  },
+  {
+    feature: "Puissance crête",
+    delta2: "3400W",
+    deltaMax: "5000W",
+    winner: "deltaMax",
+  },
   { feature: "Poids", delta2: "12 kg", deltaMax: "22 kg", winner: "delta2" },
-  { feature: "Temps de charge (AC)", delta2: "50 min (80%)", deltaMax: "1.6h (80%)", winner: "delta2" },
-  { feature: "Charge solaire max", delta2: "500W", deltaMax: "800W", winner: "deltaMax" },
-  { feature: "Type de batterie", delta2: "LFP", deltaMax: "NCM", winner: "delta2" },
-  { feature: "Cycles de vie", delta2: "3000+", deltaMax: "800+", winner: "delta2" },
-  { feature: "Prix indicatif", delta2: "~999€", deltaMax: "~1999€", winner: "delta2" },
+  {
+    feature: "Temps de charge (AC)",
+    delta2: "50 min (80%)",
+    deltaMax: "1.6h (80%)",
+    winner: "delta2",
+  },
+  {
+    feature: "Charge solaire max",
+    delta2: "500W",
+    deltaMax: "800W",
+    winner: "deltaMax",
+  },
+  {
+    feature: "Type de batterie",
+    delta2: "LFP",
+    deltaMax: "NCM",
+    winner: "delta2",
+  },
+  {
+    feature: "Cycles de vie",
+    delta2: "3000+",
+    deltaMax: "800+",
+    winner: "delta2",
+  },
+  {
+    feature: "Prix indicatif",
+    delta2: "~999€",
+    deltaMax: "~1999€",
+    winner: "delta2",
+  },
 ];
 
 export default async function VsDeltaMaxPage({ params }: PageProps) {
@@ -51,7 +99,8 @@ export default async function VsDeltaMaxPage({ params }: PageProps) {
             EcoFlow DELTA 2 vs DELTA Max
           </h1>
           <p className="text-xl text-indigo-100 max-w-2xl mx-auto">
-            Quelle EcoFlow correspond le mieux à vos besoins ? Comparaison détaillée.
+            Quelle EcoFlow correspond le mieux à vos besoins ? Comparaison
+            détaillée.
           </p>
         </div>
       </section>
@@ -82,23 +131,29 @@ export default async function VsDeltaMaxPage({ params }: PageProps) {
                 {comparisonData.map((row, index) => (
                   <tr
                     key={row.feature}
-                    className={index % 2 === 0 ? "" : "bg-gray-50 dark:bg-gray-700/50"}
+                    className={
+                      index % 2 === 0 ? "" : "bg-gray-50 dark:bg-gray-700/50"
+                    }
                   >
                     <td className="px-6 py-4 font-medium text-gray-900 dark:text-white">
                       {row.feature}
                     </td>
-                    <td className={`px-6 py-4 text-center ${
-                      row.winner === "delta2"
-                        ? "text-green-600 dark:text-green-400 font-semibold"
-                        : "text-gray-600 dark:text-gray-300"
-                    }`}>
+                    <td
+                      className={`px-6 py-4 text-center ${
+                        row.winner === "delta2"
+                          ? "text-green-600 dark:text-green-400 font-semibold"
+                          : "text-gray-600 dark:text-gray-300"
+                      }`}
+                    >
                       {row.delta2} {row.winner === "delta2" && "✓"}
                     </td>
-                    <td className={`px-6 py-4 text-center ${
-                      row.winner === "deltaMax"
-                        ? "text-blue-600 dark:text-blue-400 font-semibold"
-                        : "text-gray-600 dark:text-gray-300"
-                    }`}>
+                    <td
+                      className={`px-6 py-4 text-center ${
+                        row.winner === "deltaMax"
+                          ? "text-blue-600 dark:text-blue-400 font-semibold"
+                          : "text-gray-600 dark:text-gray-300"
+                      }`}
+                    >
                       {row.deltaMax} {row.winner === "deltaMax" && "✓"}
                     </td>
                   </tr>

@@ -1,13 +1,17 @@
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
+import Image from "next/image";
 import AmazonButton from "@/components/common/AmazonButton";
 import { type Locale } from "@/i18n/config";
+import { usageImages } from "@/lib/images";
 
 interface PageProps {
   params: Promise<{ locale: Locale }>;
 }
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "usages.remotework" });
 
@@ -26,8 +30,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 const workEquipments = [
-  { name: "MacBook Pro 16\"", power: "100W", autonomy: "~10h" },
-  { name: "Écran externe 27\"", power: "40W", autonomy: "~25h" },
+  { name: 'MacBook Pro 16"', power: "100W", autonomy: "~10h" },
+  { name: 'Écran externe 27"', power: "40W", autonomy: "~25h" },
   { name: "Box internet / 4G", power: "15W", autonomy: "~68h" },
   { name: "Lampe de bureau LED", power: "10W", autonomy: "~100h" },
   { name: "Webcam + Micro", power: "5W", autonomy: "~200h" },
@@ -42,9 +46,18 @@ export default async function TeletravailPage({ params }: PageProps) {
 
   return (
     <>
-      {/* Hero */}
-      <section className="bg-gradient-to-br from-purple-600 to-purple-800 text-white py-16">
-        <div className="container mx-auto px-4 text-center">
+      {/* Hero with Background Image */}
+      <section className="relative bg-gradient-to-br from-purple-600 to-purple-800 text-white py-16 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src={usageImages.remotework.hero}
+            alt="Télétravail avec EcoFlow DELTA 2"
+            fill
+            className="object-cover opacity-30"
+            priority
+          />
+        </div>
+        <div className="container mx-auto px-4 text-center relative z-10">
           <div className="text-6xl mb-4">💻</div>
           <h1 className="text-4xl md:text-5xl font-bold mb-6">{t("title")}</h1>
           <p className="text-xl text-purple-100 max-w-2xl mx-auto">
@@ -62,12 +75,14 @@ export default async function TeletravailPage({ params }: PageProps) {
             </h2>
             <div className="prose prose-lg dark:prose-invert mb-12">
               <p>
-                Le télétravail ne doit plus être limité à votre bureau. Avec l&apos;EcoFlow DELTA 2, 
-                transformez n&apos;importe quel endroit en espace de travail : terrasse, jardin, 
-                café, co-working, ou même en pleine nature.
+                Le télétravail ne doit plus être limité à votre bureau. Avec
+                l&apos;EcoFlow DELTA 2, transformez n&apos;importe quel endroit
+                en espace de travail : terrasse, jardin, café, co-working, ou
+                même en pleine nature.
               </p>
               <p>
-                Plus de crainte des coupures de courant pendant vos visioconférences importantes !
+                Plus de crainte des coupures de courant pendant vos
+                visioconférences importantes !
               </p>
             </div>
 
@@ -124,7 +139,9 @@ export default async function TeletravailPage({ params }: PageProps) {
                   {workEquipments.map((eq, index) => (
                     <tr
                       key={eq.name}
-                      className={index % 2 === 0 ? "" : "bg-gray-50 dark:bg-gray-700/50"}
+                      className={
+                        index % 2 === 0 ? "" : "bg-gray-50 dark:bg-gray-700/50"
+                      }
                     >
                       <td className="px-6 py-4 text-gray-900 dark:text-white">
                         {eq.name}
@@ -155,8 +172,10 @@ export default async function TeletravailPage({ params }: PageProps) {
                 <li>• Éclairage (10W)</li>
               </ul>
               <p className="text-gray-700 dark:text-gray-300">
-                <strong>Consommation totale :</strong> ~130W<br />
-                <strong>Autonomie avec DELTA 2 :</strong> ~7-8 heures de travail ✓
+                <strong>Consommation totale :</strong> ~130W
+                <br />
+                <strong>Autonomie avec DELTA 2 :</strong> ~7-8 heures de travail
+                ✓
               </p>
               <p className="mt-4 text-purple-600 dark:text-purple-400 font-medium">
                 Soit une journée complète de télétravail !

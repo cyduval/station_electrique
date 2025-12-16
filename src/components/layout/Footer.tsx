@@ -37,9 +37,7 @@ export default function Footer({ locale }: FooterProps) {
               <span>EcoFlow DELTA 2 Guide</span>
             </Link>
             <p className="text-gray-400 mb-4">{t("aboutText")}</p>
-            <p className="text-sm text-gray-500">
-              {t("copyright")}
-            </p>
+            <p className="text-sm text-gray-500">{t("copyright")}</p>
           </div>
 
           {/* Quick Links */}
@@ -80,7 +78,8 @@ export default function Footer({ locale }: FooterProps) {
         {/* Affiliate Disclaimer */}
         <div className="mt-8 pt-8 border-t border-gray-800">
           <p className="text-sm text-gray-500 text-center">
-            En tant que Partenaire Amazon, ce site réalise un bénéfice sur les achats remplissant les conditions requises.
+            En tant que Partenaire Amazon, ce site réalise un bénéfice sur les
+            achats remplissant les conditions requises.
           </p>
         </div>
       </div>

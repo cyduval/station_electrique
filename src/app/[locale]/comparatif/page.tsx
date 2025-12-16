@@ -8,7 +8,9 @@ interface PageProps {
   params: Promise<{ locale: Locale }>;
 }
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "comparisons" });
 

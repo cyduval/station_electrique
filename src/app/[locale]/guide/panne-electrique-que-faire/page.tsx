@@ -7,7 +7,9 @@ interface PageProps {
   params: Promise<{ locale: Locale }>;
 }
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "guides.powerOutage" });
 
@@ -48,7 +50,7 @@ export default async function PanneElectriquePage({ params }: PageProps) {
         <div className="container mx-auto px-4">
           <article className="max-w-4xl mx-auto prose prose-lg dark:prose-invert">
             <h2>Avant la panne : Se préparer</h2>
-            
+
             <h3>Kit d&apos;urgence à préparer</h3>
             <ul>
               <li>✓ Station d&apos;énergie portable (chargée à 100%)</li>
@@ -70,11 +72,12 @@ export default async function PanneElectriquePage({ params }: PageProps) {
             </ul>
 
             <h2>Pendant la panne : Premiers réflexes</h2>
-            
+
             <h3>1. Vérifier l&apos;étendue de la panne</h3>
             <p>
-              Regardez si vos voisins sont également affectés. Vérifiez votre tableau 
-              électrique (disjoncteur). Consultez le site de votre fournisseur d&apos;électricité.
+              Regardez si vos voisins sont également affectés. Vérifiez votre
+              tableau électrique (disjoncteur). Consultez le site de votre
+              fournisseur d&apos;électricité.
             </p>
 
             <h3>2. Prioriser les appareils essentiels</h3>
@@ -108,16 +111,28 @@ export default async function PanneElectriquePage({ params }: PageProps) {
               </thead>
               <tbody>
                 <tr>
-                  <td className="px-4 py-3 border-b dark:border-gray-700">Panne locale</td>
-                  <td className="px-4 py-3 border-b dark:border-gray-700">1-4 heures</td>
+                  <td className="px-4 py-3 border-b dark:border-gray-700">
+                    Panne locale
+                  </td>
+                  <td className="px-4 py-3 border-b dark:border-gray-700">
+                    1-4 heures
+                  </td>
                 </tr>
                 <tr>
-                  <td className="px-4 py-3 border-b dark:border-gray-700">Tempête/Intempéries</td>
-                  <td className="px-4 py-3 border-b dark:border-gray-700">4-24 heures</td>
+                  <td className="px-4 py-3 border-b dark:border-gray-700">
+                    Tempête/Intempéries
+                  </td>
+                  <td className="px-4 py-3 border-b dark:border-gray-700">
+                    4-24 heures
+                  </td>
                 </tr>
                 <tr>
-                  <td className="px-4 py-3 border-b dark:border-gray-700">Catastrophe naturelle</td>
-                  <td className="px-4 py-3 border-b dark:border-gray-700">1-7 jours</td>
+                  <td className="px-4 py-3 border-b dark:border-gray-700">
+                    Catastrophe naturelle
+                  </td>
+                  <td className="px-4 py-3 border-b dark:border-gray-700">
+                    1-7 jours
+                  </td>
                 </tr>
                 <tr>
                   <td className="px-4 py-3">Panne majeure du réseau</td>
@@ -128,8 +143,8 @@ export default async function PanneElectriquePage({ params }: PageProps) {
 
             <h2>Pourquoi une station d&apos;énergie ?</h2>
             <p>
-              Contrairement aux groupes électrogènes à essence, une station d&apos;énergie 
-              portable comme l&apos;EcoFlow DELTA 2 offre :
+              Contrairement aux groupes électrogènes à essence, une station
+              d&apos;énergie portable comme l&apos;EcoFlow DELTA 2 offre :
             </p>
             <ul>
               <li>✓ Utilisation en intérieur (pas d&apos;émissions)</li>

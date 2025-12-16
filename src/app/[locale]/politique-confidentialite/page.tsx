@@ -7,7 +7,9 @@ interface PageProps {
   params: Promise<{ locale: Locale }>;
 }
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "legal.privacy" });
 
@@ -34,49 +36,48 @@ export default function PolitiqueConfidentialitePage() {
 
           <article className="prose prose-lg dark:prose-invert">
             <p className="lead">
-              Cette politique de confidentialité explique comment nous collectons, 
-              utilisons et protégeons vos données personnelles.
+              Cette politique de confidentialité explique comment nous
+              collectons, utilisons et protégeons vos données personnelles.
             </p>
 
             <h2>Collecte des données</h2>
             <p>
-              Ce site ne collecte pas de données personnelles directement. 
-              Toutefois, nous utilisons des services tiers qui peuvent collecter 
+              Ce site ne collecte pas de données personnelles directement.
+              Toutefois, nous utilisons des services tiers qui peuvent collecter
               des informations :
             </p>
 
             <h3>Google Analytics</h3>
             <p>
-              Nous utilisons Google Analytics pour analyser le trafic de notre site. 
-              Ce service peut collecter des informations anonymisées sur votre 
-              navigation (pages visitées, durée des visites, appareil utilisé).
+              Nous utilisons Google Analytics pour analyser le trafic de notre
+              site. Ce service peut collecter des informations anonymisées sur
+              votre navigation (pages visitées, durée des visites, appareil
+              utilisé).
             </p>
 
             <h3>Amazon Associates</h3>
             <p>
-              En cliquant sur les liens vers Amazon, vous êtes redirigé vers le 
-              site Amazon.fr qui a sa propre politique de confidentialité. 
+              En cliquant sur les liens vers Amazon, vous êtes redirigé vers le
+              site Amazon.fr qui a sa propre politique de confidentialité.
               Amazon peut déposer des cookies pour le suivi des conversions.
             </p>
 
             <h2>Cookies</h2>
-            <p>
-              Ce site utilise des cookies pour :
-            </p>
+            <p>Ce site utilise des cookies pour :</p>
             <ul>
               <li>Mesurer l&apos;audience (Google Analytics)</li>
               <li>Mémoriser vos préférences (thème, langue)</li>
               <li>Assurer le fonctionnement technique du site</li>
             </ul>
             <p>
-              Vous pouvez configurer votre navigateur pour refuser les cookies 
+              Vous pouvez configurer votre navigateur pour refuser les cookies
               ou être alerté lorsqu&apos;un cookie est déposé.
             </p>
 
             <h2>Vos droits (RGPD)</h2>
             <p>
-              Conformément au Règlement Général sur la Protection des Données (RGPD), 
-              vous disposez des droits suivants :
+              Conformément au Règlement Général sur la Protection des Données
+              (RGPD), vous disposez des droits suivants :
             </p>
             <ul>
               <li>Droit d&apos;accès à vos données</li>
@@ -89,14 +90,15 @@ export default function PolitiqueConfidentialitePage() {
 
             <h2>Contact</h2>
             <p>
-              Pour exercer vos droits ou pour toute question concernant vos 
+              Pour exercer vos droits ou pour toute question concernant vos
               données personnelles, contactez-nous à : [votre@email.com]
             </p>
 
             <h2>Mise à jour</h2>
             <p>
-              Cette politique de confidentialité peut être mise à jour à tout moment. 
-              La date de dernière mise à jour est indiquée en bas de cette page.
+              Cette politique de confidentialité peut être mise à jour à tout
+              moment. La date de dernière mise à jour est indiquée en bas de
+              cette page.
             </p>
 
             <p className="text-sm text-gray-500 mt-8">

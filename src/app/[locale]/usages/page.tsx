@@ -8,7 +8,9 @@ interface PageProps {
   params: Promise<{ locale: Locale }>;
 }
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "usages" });
 
@@ -79,7 +81,9 @@ export default function UsagesPage() {
                 href={usage.href}
                 className="group block overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
               >
-                <div className={`bg-gradient-to-br ${usage.color} p-8 text-white`}>
+                <div
+                  className={`bg-gradient-to-br ${usage.color} p-8 text-white`}
+                >
                   <div className="text-6xl mb-4">{usage.emoji}</div>
                   <h2 className="text-2xl font-bold mb-2">{usage.title}</h2>
                 </div>

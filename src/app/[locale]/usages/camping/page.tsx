@@ -1,13 +1,17 @@
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
+import Image from "next/image";
 import AmazonButton from "@/components/common/AmazonButton";
 import { type Locale } from "@/i18n/config";
+import { usageImages } from "@/lib/images";
 
 interface PageProps {
   params: Promise<{ locale: Locale }>;
 }
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "usages.camping" });
 
@@ -42,9 +46,18 @@ export default async function CampingPage({ params }: PageProps) {
 
   return (
     <>
-      {/* Hero */}
-      <section className="bg-gradient-to-br from-green-600 to-green-800 text-white py-16">
-        <div className="container mx-auto px-4 text-center">
+      {/* Hero with Background Image */}
+      <section className="relative bg-gradient-to-br from-green-600 to-green-800 text-white py-16 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src={usageImages.camping.hero}
+            alt="Camping avec EcoFlow DELTA 2"
+            fill
+            className="object-cover opacity-30"
+            priority
+          />
+        </div>
+        <div className="container mx-auto px-4 text-center relative z-10">
           <div className="text-6xl mb-4">🏕️</div>
           <h1 className="text-4xl md:text-5xl font-bold mb-6">{t("title")}</h1>
           <p className="text-xl text-green-100 max-w-2xl mx-auto">
@@ -62,15 +75,26 @@ export default async function CampingPage({ params }: PageProps) {
             </h2>
             <div className="prose prose-lg dark:prose-invert mb-12">
               <p>
-                L&apos;EcoFlow DELTA 2 est le compagnon idéal pour le camping et la vanlife. 
-                Avec sa capacité de 1024 Wh et sa puissance de 1800W, elle peut alimenter 
-                tous vos équipements essentiels pendant plusieurs jours.
+                L&apos;EcoFlow DELTA 2 est le compagnon idéal pour le camping et
+                la vanlife. Avec sa capacité de 1024 Wh et sa puissance de
+                1800W, elle peut alimenter tous vos équipements essentiels
+                pendant plusieurs jours.
               </p>
               <ul>
-                <li><strong>Portabilité</strong> : 12 kg avec poignées intégrées</li>
-                <li><strong>Recharge solaire</strong> : Compatible panneaux jusqu&apos;à 500W</li>
-                <li><strong>Silencieuse</strong> : Fonctionne sans bruit dans la nature</li>
-                <li><strong>Résistante</strong> : Conçue pour l&apos;extérieur</li>
+                <li>
+                  <strong>Portabilité</strong> : 12 kg avec poignées intégrées
+                </li>
+                <li>
+                  <strong>Recharge solaire</strong> : Compatible panneaux
+                  jusqu&apos;à 500W
+                </li>
+                <li>
+                  <strong>Silencieuse</strong> : Fonctionne sans bruit dans la
+                  nature
+                </li>
+                <li>
+                  <strong>Résistante</strong> : Conçue pour l&apos;extérieur
+                </li>
               </ul>
             </div>
 
@@ -96,7 +120,9 @@ export default async function CampingPage({ params }: PageProps) {
                   {equipments.map((eq, index) => (
                     <tr
                       key={eq.name}
-                      className={index % 2 === 0 ? "" : "bg-gray-50 dark:bg-gray-700/50"}
+                      className={
+                        index % 2 === 0 ? "" : "bg-gray-50 dark:bg-gray-700/50"
+                      }
                     >
                       <td className="px-6 py-4 text-gray-900 dark:text-white">
                         {eq.name}
@@ -118,13 +144,22 @@ export default async function CampingPage({ params }: PageProps) {
             </h2>
             <div className="bg-green-50 dark:bg-green-900/20 rounded-xl p-8 mb-12">
               <p className="text-gray-700 dark:text-gray-300 mb-4">
-                Pour une autonomie complète en camping, nous recommandons de coupler 
-                l&apos;EcoFlow DELTA 2 avec des panneaux solaires :
+                Pour une autonomie complète en camping, nous recommandons de
+                coupler l&apos;EcoFlow DELTA 2 avec des panneaux solaires :
               </p>
               <ul className="space-y-2 text-gray-700 dark:text-gray-300">
-                <li>• <strong>2 x panneaux 100W</strong> : Recharge en ~5-6h (plein soleil)</li>
-                <li>• <strong>2 x panneaux 220W</strong> : Recharge en ~2-3h (plein soleil)</li>
-                <li>• <strong>1 x panneau 400W</strong> : Recharge en ~3h (plein soleil)</li>
+                <li>
+                  • <strong>2 x panneaux 100W</strong> : Recharge en ~5-6h
+                  (plein soleil)
+                </li>
+                <li>
+                  • <strong>2 x panneaux 220W</strong> : Recharge en ~2-3h
+                  (plein soleil)
+                </li>
+                <li>
+                  • <strong>1 x panneau 400W</strong> : Recharge en ~3h (plein
+                  soleil)
+                </li>
               </ul>
             </div>
           </div>

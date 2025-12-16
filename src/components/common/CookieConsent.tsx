@@ -28,8 +28,9 @@ export default function CookieConsent() {
     <div className="fixed bottom-0 left-0 right-0 bg-gray-900 text-white p-4 z-50 shadow-lg">
       <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
         <p className="text-sm text-gray-300">
-          Ce site utilise des cookies pour améliorer votre expérience et mesurer l&apos;audience. 
-          En continuant à naviguer, vous acceptez l&apos;utilisation des cookies.
+          Ce site utilise des cookies pour améliorer votre expérience et mesurer
+          l&apos;audience. En continuant à naviguer, vous acceptez
+          l&apos;utilisation des cookies.
         </p>
         <div className="flex gap-3">
           <button

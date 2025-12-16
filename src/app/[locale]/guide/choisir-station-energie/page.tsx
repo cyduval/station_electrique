@@ -7,9 +7,14 @@ interface PageProps {
   params: Promise<{ locale: Locale }>;
 }
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "guides.chooseStation" });
+  const t = await getTranslations({
+    locale,
+    namespace: "guides.chooseStation",
+  });
 
   return {
     title: t("title"),
@@ -27,7 +32,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function ChoisirStationPage({ params }: PageProps) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "guides.chooseStation" });
+  const t = await getTranslations({
+    locale,
+    namespace: "guides.chooseStation",
+  });
   const tCommon = await getTranslations({ locale, namespace: "common" });
 
   return (
@@ -49,39 +57,56 @@ export default async function ChoisirStationPage({ params }: PageProps) {
           <article className="max-w-4xl mx-auto prose prose-lg dark:prose-invert">
             <h2>1. Évaluez vos besoins en puissance</h2>
             <p>
-              La première étape est de déterminer quels appareils vous souhaitez alimenter 
-              et leur consommation électrique.
+              La première étape est de déterminer quels appareils vous souhaitez
+              alimenter et leur consommation électrique.
             </p>
             <ul>
-              <li><strong>Usage léger</strong> (smartphones, laptops, éclairage) : 300-500 Wh</li>
-              <li><strong>Usage moyen</strong> (réfrigérateur, TV, équipement camping) : 500-1000 Wh</li>
-              <li><strong>Usage intensif</strong> (électroménager, outils) : 1000-2000+ Wh</li>
+              <li>
+                <strong>Usage léger</strong> (smartphones, laptops, éclairage) :
+                300-500 Wh
+              </li>
+              <li>
+                <strong>Usage moyen</strong> (réfrigérateur, TV, équipement
+                camping) : 500-1000 Wh
+              </li>
+              <li>
+                <strong>Usage intensif</strong> (électroménager, outils) :
+                1000-2000+ Wh
+              </li>
             </ul>
 
             <h2>2. Critères essentiels à considérer</h2>
-            
+
             <h3>Capacité (Wh)</h3>
             <p>
-              La capacité en Watt-heures détermine combien de temps vous pouvez alimenter 
-              vos appareils. Pour calculer : Capacité (Wh) ÷ Puissance appareil (W) = Heures d&apos;autonomie.
+              La capacité en Watt-heures détermine combien de temps vous pouvez
+              alimenter vos appareils. Pour calculer : Capacité (Wh) ÷ Puissance
+              appareil (W) = Heures d&apos;autonomie.
             </p>
 
             <h3>Puissance de sortie (W)</h3>
             <p>
-              La puissance maximale que peut délivrer la station. Vérifiez que vos appareils 
-              les plus gourmands ne dépassent pas cette limite.
+              La puissance maximale que peut délivrer la station. Vérifiez que
+              vos appareils les plus gourmands ne dépassent pas cette limite.
             </p>
 
             <h3>Type de batterie</h3>
             <ul>
-              <li><strong>LFP (Lithium Fer Phosphate)</strong> : Plus durable (3000+ cycles), plus sûre, recommandée</li>
-              <li><strong>NCM/NMC</strong> : Plus légère mais moins de cycles (500-800)</li>
+              <li>
+                <strong>LFP (Lithium Fer Phosphate)</strong> : Plus durable
+                (3000+ cycles), plus sûre, recommandée
+              </li>
+              <li>
+                <strong>NCM/NMC</strong> : Plus légère mais moins de cycles
+                (500-800)
+              </li>
             </ul>
 
             <h3>Vitesse de recharge</h3>
             <p>
-              Certaines stations comme l&apos;EcoFlow DELTA 2 offrent une recharge ultra-rapide 
-              (0-80% en 50 min), idéale pour les situations d&apos;urgence.
+              Certaines stations comme l&apos;EcoFlow DELTA 2 offrent une
+              recharge ultra-rapide (0-80% en 50 min), idéale pour les
+              situations d&apos;urgence.
             </p>
 
             <h3>Options de recharge</h3>
@@ -94,16 +119,28 @@ export default async function ChoisirStationPage({ params }: PageProps) {
 
             <h2>3. Fonctionnalités avancées</h2>
             <ul>
-              <li><strong>EPS/UPS</strong> : Basculement automatique en cas de coupure (&lt;30ms)</li>
-              <li><strong>Application mobile</strong> : Contrôle et monitoring à distance</li>
-              <li><strong>Extensibilité</strong> : Possibilité d&apos;ajouter des batteries supplémentaires</li>
-              <li><strong>Multiples sorties</strong> : AC, USB-A, USB-C, DC</li>
+              <li>
+                <strong>EPS/UPS</strong> : Basculement automatique en cas de
+                coupure (&lt;30ms)
+              </li>
+              <li>
+                <strong>Application mobile</strong> : Contrôle et monitoring à
+                distance
+              </li>
+              <li>
+                <strong>Extensibilité</strong> : Possibilité d&apos;ajouter des
+                batteries supplémentaires
+              </li>
+              <li>
+                <strong>Multiples sorties</strong> : AC, USB-A, USB-C, DC
+              </li>
             </ul>
 
             <h2>4. Notre recommandation</h2>
             <p>
-              Pour la plupart des utilisateurs, l&apos;<strong>EcoFlow DELTA 2</strong> représente 
-              le meilleur compromis :
+              Pour la plupart des utilisateurs, l&apos;
+              <strong>EcoFlow DELTA 2</strong> représente le meilleur compromis
+              :
             </p>
             <ul>
               <li>1024 Wh de capacité (extensible à 3 kWh)</li>

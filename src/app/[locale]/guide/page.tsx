@@ -8,7 +8,9 @@ interface PageProps {
   params: Promise<{ locale: Locale }>;
 }
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "guides" });
 
@@ -71,7 +73,9 @@ export default function GuidesPage() {
                 href={guide.href}
                 className="group block overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
               >
-                <div className={`bg-gradient-to-br ${guide.color} p-8 text-white`}>
+                <div
+                  className={`bg-gradient-to-br ${guide.color} p-8 text-white`}
+                >
                   <div className="text-6xl mb-4">{guide.emoji}</div>
                   <h2 className="text-2xl font-bold mb-2">{guide.title}</h2>
                 </div>

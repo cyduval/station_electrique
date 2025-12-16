@@ -1,13 +1,17 @@
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
+import Image from "next/image";
 import AmazonButton from "@/components/common/AmazonButton";
 import { type Locale } from "@/i18n/config";
+import { usageImages } from "@/lib/images";
 
 interface PageProps {
   params: Promise<{ locale: Locale }>;
 }
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "usages.home" });
 
@@ -42,9 +46,18 @@ export default async function MaisonPage({ params }: PageProps) {
 
   return (
     <>
-      {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-16">
-        <div className="container mx-auto px-4 text-center">
+      {/* Hero with Background Image */}
+      <section className="relative bg-gradient-to-br from-blue-600 to-blue-800 text-white py-16 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src={usageImages.home.hero}
+            alt="EcoFlow DELTA 2 pour la maison"
+            fill
+            className="object-cover opacity-30"
+            priority
+          />
+        </div>
+        <div className="container mx-auto px-4 text-center relative z-10">
           <div className="text-6xl mb-4">🏠</div>
           <h1 className="text-4xl md:text-5xl font-bold mb-6">{t("title")}</h1>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto">
@@ -62,9 +75,10 @@ export default async function MaisonPage({ params }: PageProps) {
             </h2>
             <div className="prose prose-lg dark:prose-invert mb-12">
               <p>
-                Les coupures de courant sont de plus en plus fréquentes. L&apos;EcoFlow DELTA 2 
-                vous permet de maintenir vos appareils essentiels en fonctionnement pendant 
-                plusieurs heures, voire plusieurs jours avec une recharge solaire.
+                Les coupures de courant sont de plus en plus fréquentes.
+                L&apos;EcoFlow DELTA 2 vous permet de maintenir vos appareils
+                essentiels en fonctionnement pendant plusieurs heures, voire
+                plusieurs jours avec une recharge solaire.
               </p>
             </div>
 
@@ -74,11 +88,14 @@ export default async function MaisonPage({ params }: PageProps) {
                 ⚡ Fonction EPS (Emergency Power Supply)
               </h3>
               <p className="text-gray-700 dark:text-gray-300 mb-4">
-                La fonction EPS permet à l&apos;EcoFlow DELTA 2 de basculer automatiquement 
-                sur batterie en moins de 30 millisecondes en cas de coupure de courant.
+                La fonction EPS permet à l&apos;EcoFlow DELTA 2 de basculer
+                automatiquement sur batterie en moins de 30 millisecondes en cas
+                de coupure de courant.
               </p>
               <ul className="space-y-2 text-gray-700 dark:text-gray-300">
-                <li>✓ Protection des appareils sensibles (box internet, NAS, etc.)</li>
+                <li>
+                  ✓ Protection des appareils sensibles (box internet, NAS, etc.)
+                </li>
                 <li>✓ Basculement automatique sans intervention</li>
                 <li>✓ Temps de commutation &lt; 30 ms</li>
                 <li>✓ Idéal pour le télétravail</li>
@@ -107,7 +124,9 @@ export default async function MaisonPage({ params }: PageProps) {
                   {homeEquipments.map((eq, index) => (
                     <tr
                       key={eq.name}
-                      className={index % 2 === 0 ? "" : "bg-gray-50 dark:bg-gray-700/50"}
+                      className={
+                        index % 2 === 0 ? "" : "bg-gray-50 dark:bg-gray-700/50"
+                      }
                     >
                       <td className="px-6 py-4 text-gray-900 dark:text-white">
                         {eq.name}
@@ -129,7 +148,8 @@ export default async function MaisonPage({ params }: PageProps) {
             </h2>
             <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-8">
               <p className="text-gray-700 dark:text-gray-300 mb-4">
-                <strong>Situation :</strong> Panne de courant de 6 heures en soirée
+                <strong>Situation :</strong> Panne de courant de 6 heures en
+                soirée
               </p>
               <p className="text-gray-700 dark:text-gray-300 mb-4">
                 <strong>Appareils maintenus :</strong>
@@ -141,7 +161,8 @@ export default async function MaisonPage({ params }: PageProps) {
                 <li>• Recharge téléphones (20W)</li>
               </ul>
               <p className="text-gray-700 dark:text-gray-300">
-                <strong>Consommation totale :</strong> ~220W<br />
+                <strong>Consommation totale :</strong> ~220W
+                <br />
                 <strong>Autonomie avec DELTA 2 :</strong> ~4-5 heures ✓
               </p>
             </div>
@@ -152,9 +173,7 @@ export default async function MaisonPage({ params }: PageProps) {
       {/* CTA */}
       <section className="py-16 bg-blue-700 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">
-            Sécurisez votre foyer
-          </h2>
+          <h2 className="text-3xl font-bold mb-4">Sécurisez votre foyer</h2>
           <AmazonButton size="large" variant="light" />
           <p className="mt-6 text-sm text-blue-200 max-w-xl mx-auto">
             {tCommon("affiliateDisclaimer")}
