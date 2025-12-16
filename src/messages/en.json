@@ -1,0 +1,217 @@
+{
+  "metadata": {
+    "siteName": "EcoFlow DELTA 2 - Portable Power Station",
+    "siteDescription": "Discover the EcoFlow DELTA 2 portable power station. Complete guide, comparisons, use cases and reviews to make the best choice.",
+    "keywords": "portable power station, portable generator, EcoFlow Delta 2, portable solar battery"
+  },
+  "navigation": {
+    "home": "Home",
+    "product": "EcoFlow DELTA 2",
+    "comparisons": "Comparisons",
+    "usages": "Use Cases",
+    "guide": "Guides",
+    "faq": "FAQ",
+    "blog": "Blog"
+  },
+  "home": {
+    "hero": {
+      "title": "EcoFlow DELTA 2",
+      "subtitle": "Next-generation portable power station",
+      "description": "Discover the most versatile portable power solution for home, camping and remote work.",
+      "cta": "Discover the product"
+    },
+    "features": {
+      "title": "Why choose EcoFlow DELTA 2?",
+      "capacity": {
+        "title": "1024 Wh capacity",
+        "description": "Power your essential devices for hours"
+      },
+      "charging": {
+        "title": "Ultra-fast charging",
+        "description": "0 to 80% in just 50 minutes"
+      },
+      "solar": {
+        "title": "Solar compatible",
+        "description": "Charge with solar panels up to 500W"
+      },
+      "outlets": {
+        "title": "Multiple outlets",
+        "description": "AC, USB-A, USB-C, DC for all your devices"
+      }
+    },
+    "useCases": {
+      "title": "For all your needs",
+      "home": {
+        "title": "At Home",
+        "description": "Secure your power supply during outages"
+      },
+      "camping": {
+        "title": "Camping & Vanlife",
+        "description": "Energy autonomy for your adventures"
+      },
+      "work": {
+        "title": "Remote Work",
+        "description": "Work anywhere without interruption"
+      }
+    },
+    "cta": {
+      "title": "Ready to discover EcoFlow DELTA 2?",
+      "button": "See price on Amazon",
+      "disclaimer": "As an Amazon Associate, this site earns from qualifying purchases."
+    }
+  },
+  "product": {
+    "title": "EcoFlow DELTA 2 - Complete Overview",
+    "metaDescription": "Complete guide to EcoFlow DELTA 2: features, pros, cons and reviews. Everything you need to know before buying.",
+    "overview": {
+      "title": "General Overview",
+      "description": "The EcoFlow DELTA 2 is a next-generation portable power station offering 1024 Wh capacity and 1800W output (3400W surge). It represents the perfect balance between power, portability and versatility."
+    },
+    "specs": {
+      "title": "Specifications",
+      "capacity": "Capacity",
+      "output": "Output Power",
+      "weight": "Weight",
+      "dimensions": "Dimensions",
+      "chargingTime": "Charging Time",
+      "batteryType": "Battery Type",
+      "warranty": "Warranty",
+      "lifespan": "Lifespan"
+    },
+    "pros": {
+      "title": "Pros",
+      "list": [
+        "Ultra-fast charging (0-80% in 50 min)",
+        "Long-lasting LFP battery (3000+ cycles)",
+        "Expandable up to 3 kWh",
+        "Solar panel compatible",
+        "Intuitive mobile app",
+        "Quiet operation"
+      ]
+    },
+    "cons": {
+      "title": "Cons",
+      "list": [
+        "Higher price than some competitors",
+        "Weight of 12 kg",
+        "No built-in wheels"
+      ]
+    },
+    "buyButton": "See price on Amazon",
+    "availableOn": "Available on Amazon"
+  },
+  "comparisons": {
+    "title": "Comparisons",
+    "metaDescription": "Compare EcoFlow DELTA 2 with its competitors. Detailed comparison tables to make the best choice.",
+    "vsJackery": {
+      "title": "EcoFlow DELTA 2 vs Jackery Explorer 1000",
+      "description": "Detailed comparison between two popular power stations"
+    },
+    "vsDeltaMax": {
+      "title": "EcoFlow DELTA 2 vs DELTA Max",
+      "description": "Which EcoFlow to choose based on your needs?"
+    },
+    "table": {
+      "feature": "Feature",
+      "capacity": "Capacity",
+      "output": "Output",
+      "weight": "Weight",
+      "chargingSpeed": "Charging Speed",
+      "price": "Price",
+      "winner": "Winner"
+    }
+  },
+  "usages": {
+    "title": "Use Cases",
+    "metaDescription": "Discover how to use EcoFlow DELTA 2 for camping, at home or for remote work.",
+    "camping": {
+      "title": "Camping & Vanlife",
+      "metaDescription": "EcoFlow DELTA 2 for camping and vanlife: autonomy, compatible equipment and tips.",
+      "description": "The EcoFlow DELTA 2 is the ideal companion for your outdoor adventures."
+    },
+    "home": {
+      "title": "At Home",
+      "metaDescription": "Use EcoFlow DELTA 2 as a backup battery at home during power outages.",
+      "description": "Protect your home against power cuts."
+    },
+    "remotework": {
+      "title": "Remote Work",
+      "metaDescription": "EcoFlow DELTA 2 for remote work: work anywhere with reliable power.",
+      "description": "Work from anywhere without worrying about power outages."
+    }
+  },
+  "guides": {
+    "title": "Practical Guides",
+    "metaDescription": "Complete guides on portable power stations and power outage preparation.",
+    "chooseStation": {
+      "title": "How to choose your power station?",
+      "metaDescription": "Complete guide to choosing the portable power station that suits your needs.",
+      "description": "All the criteria to consider for the right choice."
+    },
+    "powerOutage": {
+      "title": "Power outage: what to do?",
+      "metaDescription": "Power outage preparation guide. How to prepare and respond effectively.",
+      "description": "Prepare effectively for power cuts."
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "metaDescription": "All answers to your questions about EcoFlow DELTA 2: autonomy, compatibility, warranty...",
+    "questions": [
+      {
+        "question": "How long can the EcoFlow DELTA 2 power a refrigerator?",
+        "answer": "With its 1024 Wh capacity, the EcoFlow DELTA 2 can power a standard refrigerator (150W) for approximately 6 to 8 hours continuously."
+      },
+      {
+        "question": "Can you charge the EcoFlow DELTA 2 with solar panels?",
+        "answer": "Yes, the EcoFlow DELTA 2 is compatible with solar panels up to 500W. It can be fully charged in 3 hours with an optimal solar setup."
+      },
+      {
+        "question": "What is the battery lifespan?",
+        "answer": "The EcoFlow DELTA 2 uses an LFP (Lithium Iron Phosphate) battery guaranteed for over 3000 charge cycles, approximately 10 years of normal use."
+      },
+      {
+        "question": "Is the EcoFlow DELTA 2 quiet?",
+        "answer": "Yes, the EcoFlow DELTA 2 is designed for quiet operation. The fan only activates during heavy loads and remains discreet (30 dB)."
+      },
+      {
+        "question": "Can the EcoFlow DELTA 2 be used as a UPS?",
+        "answer": "Yes, thanks to the EPS (Emergency Power Supply) function, the EcoFlow DELTA 2 switches to battery in less than 30ms during an outage, protecting your sensitive devices."
+      }
+    ]
+  },
+  "blog": {
+    "title": "Blog",
+    "metaDescription": "News, tips and guides on portable power stations and energy autonomy.",
+    "readMore": "Read more",
+    "publishedOn": "Published on"
+  },
+  "legal": {
+    "title": "Legal Notice",
+    "privacy": {
+      "title": "Privacy Policy"
+    }
+  },
+  "common": {
+    "learnMore": "Learn more",
+    "buyNow": "Buy now",
+    "seePrice": "See price on Amazon",
+    "backToHome": "Back to home",
+    "share": "Share",
+    "affiliateDisclaimer": "As an Amazon Associate, this site earns from qualifying purchases.",
+    "lastUpdated": "Last updated",
+    "readingTime": "min read",
+    "tableOfContents": "Table of Contents"
+  },
+  "footer": {
+    "about": "About",
+    "aboutText": "Complete guide to EcoFlow DELTA 2 and portable power stations. Comparisons, guides and tips to make the best choice.",
+    "quickLinks": "Quick Links",
+    "legal": "Legal Information",
+    "legalNotice": "Legal Notice",
+    "privacy": "Privacy Policy",
+    "cookies": "Cookie Settings",
+    "followUs": "Follow Us",
+    "copyright": "© 2024 EcoFlow DELTA 2 Guide. All rights reserved."
+  }
+}

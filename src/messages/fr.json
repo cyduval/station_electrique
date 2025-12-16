@@ -1,0 +1,217 @@
+{
+  "metadata": {
+    "siteName": "EcoFlow DELTA 2 - Station d'Énergie Portable",
+    "siteDescription": "Découvrez la station d'énergie portable EcoFlow DELTA 2. Guide complet, comparatifs, cas d'usage et avis pour faire le meilleur choix.",
+    "keywords": "station énergie portable, générateur électrique portable, EcoFlow Delta 2, batterie solaire portable"
+  },
+  "navigation": {
+    "home": "Accueil",
+    "product": "EcoFlow DELTA 2",
+    "comparisons": "Comparatifs",
+    "usages": "Usages",
+    "guide": "Guides",
+    "faq": "FAQ",
+    "blog": "Blog"
+  },
+  "home": {
+    "hero": {
+      "title": "EcoFlow DELTA 2",
+      "subtitle": "La station d'énergie portable nouvelle génération",
+      "description": "Découvrez la solution d'alimentation portable la plus polyvalente pour la maison, le camping et le télétravail.",
+      "cta": "Découvrir le produit"
+    },
+    "features": {
+      "title": "Pourquoi choisir l'EcoFlow DELTA 2 ?",
+      "capacity": {
+        "title": "1024 Wh de capacité",
+        "description": "Alimentez vos appareils essentiels pendant des heures"
+      },
+      "charging": {
+        "title": "Recharge ultra-rapide",
+        "description": "De 0 à 80% en seulement 50 minutes"
+      },
+      "solar": {
+        "title": "Compatible solaire",
+        "description": "Rechargez avec des panneaux solaires jusqu'à 500W"
+      },
+      "outlets": {
+        "title": "Sorties multiples",
+        "description": "AC, USB-A, USB-C, DC pour tous vos appareils"
+      }
+    },
+    "useCases": {
+      "title": "Pour tous vos besoins",
+      "home": {
+        "title": "À la maison",
+        "description": "Sécurisez votre alimentation en cas de panne électrique"
+      },
+      "camping": {
+        "title": "Camping & Vanlife",
+        "description": "L'autonomie énergétique pour vos aventures"
+      },
+      "work": {
+        "title": "Télétravail",
+        "description": "Travaillez n'importe où sans interruption"
+      }
+    },
+    "cta": {
+      "title": "Prêt à découvrir l'EcoFlow DELTA 2 ?",
+      "button": "Voir le prix sur Amazon",
+      "disclaimer": "En tant que Partenaire Amazon, ce site réalise un bénéfice sur les achats remplissant les conditions requises."
+    }
+  },
+  "product": {
+    "title": "EcoFlow DELTA 2 - Présentation complète",
+    "metaDescription": "Guide complet de l'EcoFlow DELTA 2 : caractéristiques, avantages, inconvénients et avis. Tout savoir avant d'acheter.",
+    "overview": {
+      "title": "Présentation générale",
+      "description": "L'EcoFlow DELTA 2 est une station d'énergie portable de nouvelle génération offrant une capacité de 1024 Wh et une puissance de sortie de 1800W (3400W en crête). Elle représente l'équilibre parfait entre puissance, portabilité et polyvalence."
+    },
+    "specs": {
+      "title": "Fiche technique",
+      "capacity": "Capacité",
+      "output": "Puissance de sortie",
+      "weight": "Poids",
+      "dimensions": "Dimensions",
+      "chargingTime": "Temps de charge",
+      "batteryType": "Type de batterie",
+      "warranty": "Garantie",
+      "lifespan": "Durée de vie"
+    },
+    "pros": {
+      "title": "Avantages",
+      "list": [
+        "Recharge ultra-rapide (0-80% en 50 min)",
+        "Batterie LFP longue durée (3000+ cycles)",
+        "Extensible jusqu'à 3 kWh",
+        "Compatible panneaux solaires",
+        "Application mobile intuitive",
+        "Silencieux en fonctionnement"
+      ]
+    },
+    "cons": {
+      "title": "Inconvénients",
+      "list": [
+        "Prix plus élevé que certains concurrents",
+        "Poids de 12 kg",
+        "Pas de roues intégrées"
+      ]
+    },
+    "buyButton": "Voir le prix sur Amazon",
+    "availableOn": "Disponible sur Amazon"
+  },
+  "comparisons": {
+    "title": "Comparatifs",
+    "metaDescription": "Comparez l'EcoFlow DELTA 2 avec ses concurrents. Tableaux comparatifs détaillés pour faire le meilleur choix.",
+    "vsJackery": {
+      "title": "EcoFlow DELTA 2 vs Jackery Explorer 1000",
+      "description": "Comparaison détaillée entre deux stations d'énergie populaires"
+    },
+    "vsDeltaMax": {
+      "title": "EcoFlow DELTA 2 vs DELTA Max",
+      "description": "Quelle EcoFlow choisir selon vos besoins ?"
+    },
+    "table": {
+      "feature": "Caractéristique",
+      "capacity": "Capacité",
+      "output": "Puissance",
+      "weight": "Poids",
+      "chargingSpeed": "Vitesse de charge",
+      "price": "Prix",
+      "winner": "Gagnant"
+    }
+  },
+  "usages": {
+    "title": "Cas d'usage",
+    "metaDescription": "Découvrez comment utiliser l'EcoFlow DELTA 2 pour le camping, à la maison ou en télétravail.",
+    "camping": {
+      "title": "Camping & Vanlife",
+      "metaDescription": "L'EcoFlow DELTA 2 pour le camping et la vanlife : autonomie, équipements compatibles et conseils.",
+      "description": "L'EcoFlow DELTA 2 est le compagnon idéal pour vos aventures en plein air."
+    },
+    "home": {
+      "title": "À la maison",
+      "metaDescription": "Utilisez l'EcoFlow DELTA 2 comme batterie de secours à la maison en cas de panne électrique.",
+      "description": "Protégez votre foyer contre les coupures de courant."
+    },
+    "remotework": {
+      "title": "Télétravail",
+      "metaDescription": "L'EcoFlow DELTA 2 pour le télétravail : travaillez n'importe où avec une alimentation fiable.",
+      "description": "Travaillez de n'importe où sans craindre les pannes."
+    }
+  },
+  "guides": {
+    "title": "Guides pratiques",
+    "metaDescription": "Guides complets sur les stations d'énergie portables et la préparation aux pannes électriques.",
+    "chooseStation": {
+      "title": "Comment choisir sa station d'énergie ?",
+      "metaDescription": "Guide complet pour choisir la station d'énergie portable adaptée à vos besoins.",
+      "description": "Tous les critères à considérer pour faire le bon choix."
+    },
+    "powerOutage": {
+      "title": "Panne électrique : que faire ?",
+      "metaDescription": "Guide de préparation aux pannes électriques. Comment se préparer et réagir efficacement.",
+      "description": "Préparez-vous efficacement aux coupures de courant."
+    }
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "metaDescription": "Toutes les réponses à vos questions sur l'EcoFlow DELTA 2 : autonomie, compatibilité, garantie...",
+    "questions": [
+      {
+        "question": "Combien de temps l'EcoFlow DELTA 2 peut-elle alimenter un réfrigérateur ?",
+        "answer": "Avec sa capacité de 1024 Wh, l'EcoFlow DELTA 2 peut alimenter un réfrigérateur standard (150W) pendant environ 6 à 8 heures en continu."
+      },
+      {
+        "question": "Peut-on recharger l'EcoFlow DELTA 2 avec des panneaux solaires ?",
+        "answer": "Oui, l'EcoFlow DELTA 2 est compatible avec les panneaux solaires jusqu'à 500W. Elle peut être entièrement rechargée en 3 heures avec une configuration solaire optimale."
+      },
+      {
+        "question": "Quelle est la durée de vie de la batterie ?",
+        "answer": "L'EcoFlow DELTA 2 utilise une batterie LFP (Lithium Fer Phosphate) garantie pour plus de 3000 cycles de charge, soit environ 10 ans d'utilisation normale."
+      },
+      {
+        "question": "L'EcoFlow DELTA 2 est-elle silencieuse ?",
+        "answer": "Oui, l'EcoFlow DELTA 2 est conçue pour un fonctionnement silencieux. Le ventilateur ne s'active que lors de charges importantes et reste discret (30 dB)."
+      },
+      {
+        "question": "Peut-on utiliser l'EcoFlow DELTA 2 comme onduleur (UPS) ?",
+        "answer": "Oui, grâce à la fonction EPS (Emergency Power Supply), l'EcoFlow DELTA 2 bascule sur batterie en moins de 30ms en cas de coupure, protégeant ainsi vos appareils sensibles."
+      }
+    ]
+  },
+  "blog": {
+    "title": "Blog",
+    "metaDescription": "Actualités, conseils et guides sur les stations d'énergie portables et l'autonomie énergétique.",
+    "readMore": "Lire la suite",
+    "publishedOn": "Publié le"
+  },
+  "legal": {
+    "title": "Mentions légales",
+    "privacy": {
+      "title": "Politique de confidentialité"
+    }
+  },
+  "common": {
+    "learnMore": "En savoir plus",
+    "buyNow": "Acheter maintenant",
+    "seePrice": "Voir le prix sur Amazon",
+    "backToHome": "Retour à l'accueil",
+    "share": "Partager",
+    "affiliateDisclaimer": "En tant que Partenaire Amazon, ce site réalise un bénéfice sur les achats remplissant les conditions requises.",
+    "lastUpdated": "Dernière mise à jour",
+    "readingTime": "min de lecture",
+    "tableOfContents": "Sommaire"
+  },
+  "footer": {
+    "about": "À propos",
+    "aboutText": "Guide complet sur l'EcoFlow DELTA 2 et les stations d'énergie portables. Comparatifs, guides et conseils pour faire le meilleur choix.",
+    "quickLinks": "Liens rapides",
+    "legal": "Informations légales",
+    "legalNotice": "Mentions légales",
+    "privacy": "Politique de confidentialité",
+    "cookies": "Gestion des cookies",
+    "followUs": "Suivez-nous",
+    "copyright": "© 2024 EcoFlow DELTA 2 Guide. Tous droits réservés."
+  }
+}
